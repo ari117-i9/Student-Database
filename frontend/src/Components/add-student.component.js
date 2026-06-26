@@ -11,14 +11,14 @@ const AddStudent = () => {
     });
 
     const onSubmit = (studentObject) =>{
-        axios.post('http://localhost:4000/students/students', studentObject)
+        axios.post("http://localhost:4000/students/students", studentObject)
         .then(res => {
             if (res.status === 200)
-                alert('Student successfully created')
+                alert("Student successfully created")
             else
                 Promise.reject
         })
-        .catch(err => alert('Something went wrong'))
+        .catch(err => alert("Something went wrong"))
     };
 
     return(
@@ -31,4 +31,3 @@ const AddStudent = () => {
 };
 
 export default AddStudent;
-
