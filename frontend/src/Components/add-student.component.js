@@ -16,7 +16,7 @@ const AddStudent = () => {
             if (res.status === 200)
                 alert("Student successfully created")
             else
-                Promise.reject
+                Promise.reject()
         })
         .catch(err => alert("Something went wrong"))
     };
