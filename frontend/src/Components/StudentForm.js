@@ -11,7 +11,7 @@ import {
 
 const StudentForm = (props) => {
     const validationSchema = 
-        Yup.object.shape({
+        Yup.object().shape({
             name: Yup.string().required("Required"),
             email: Yup.string().email('You have entered an invalid email address').required("Required"),
             studentId: Yup.number()
