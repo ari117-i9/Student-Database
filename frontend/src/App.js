@@ -54,8 +54,8 @@ const App = () => {
                         <Col md={12}>
                             <div className="wrapper">
                                 <Routes>
-                                    <Route path="/" element={<CreateStudent />} />
-                                    <Route path="/create-student" element={<CreateStudent />} />
+                                    <Route path="/" element={<AddStudent />} />
+                                    <Route path="/create-student" element={<AddStudent />} />
                                     <Route path="/edit-student/:id" element={<EditStudent />} />
                                     <Route path="/student-list" element={<StudentList />} />
                                 </Routes>
